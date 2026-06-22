@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrokenAlgorithm — Break the System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">BrokenAlgorithm</div>
+        
+        <nav class="nav">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-icons">
+            <button id="search-btn">🔍</button>
+            <button id="account-btn">👤</button>
+            <button id="cart-btn" class="cart-icon">
+                🛒 <span id="cart-count" class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="hero-title">Break the system</h1>
+        <div class="hero-image">
+            <img src="images/hero.png" alt="Hero">
+        </div>
+    </section>
+
+ <!-- COLLECTIONS -->
+<section class="collections">
+    <h2>Explore Our Collections</h2>
+    <div class="collection-grid">
+        <div class="collection-card">
+            <img src="images/collection-techwear.jpg" alt="Techwear">
+            <h3>Techwear</h3>
+        </div>
+        <div class="collection-card">
+            <img src="images/collection-accessories.png" alt="Accessories">
+            <h3>Accessories</h3>
+        </div>
+        <div class="collection-card">
+            <img src="images/collection-cyberpunk.png" alt="Cyberpunk">
+            <h3>Cyberpunk</h3>
+        </div>
+    </div>
+</section>
+
+    <!-- SHOP SECTION -->
+    <section class="shop-section">
+        <div class="filters">
+            <button class="filter-btn">Category <span>▼</span></button>
+            <button class="filter-btn">Size <span>▼</span></button>
+            <button class="filter-btn">Color <span>▼</span></button>
+        </div>
+
+        <div class="products-grid" id="products-grid"></div>
+
+        <div class="pagination"></div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us">
+        <div class="why-us-content">
+            <h2>Why Choose Us?</h2>
+            <p>Join the revolution of style and technology.</p>
+            <button class="btn-primary" id="learn-more">Learn More</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">BrokenAlgorithm</div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Support</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Shipping & Returns</a>
+            </div>
+
+            <div class="newsletter">
+                <h4>Subscribe to our newsletter</h4>
+                <p>Stay updated with our latest drops and offers.</p>
+                <div style="display:flex; gap:12px; margin-top:12px;">
+                    <input type="email" placeholder="Email address" style="flex:1; padding:10px 12px; background:rgba(255,255,255,0.1); border:none; color:#D7E4D7;">
+                    <button style="padding:10px 24px; background:#00FF00; color:#000; border:none; cursor:pointer;">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
